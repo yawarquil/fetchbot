@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local data (keep structure but not content)
+data/*.json
+!data/.gitkeep
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Environment
+.env
+.env.local
+
+# Logs
+*.log
+
+# Temp files
+create_user.py

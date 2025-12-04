@@ -1,0 +1,12 @@
+# Render deployment configuration
+services:
+  - type: web
+    name: moviefetchbot
+    env: docker
+    plan: free
+    healthCheckPath: /_stcore/health
+    envVars:
+      - key: TMDB_API_KEY
+        value: 920654cb695ee99175e53d6da8dc2edf
+      - key: JWT_SECRET_KEY
+        generateValue: true
