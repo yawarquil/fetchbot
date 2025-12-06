@@ -109,10 +109,9 @@ def get_theme_css(theme_name: str) -> str:
         background: linear-gradient(135deg, {t['bg_primary']} 0%, {t['bg_secondary']} 100%);
     }}
     
-    /* Hide deploy button and menu */
-    .stDeployButton, 
-    [data-testid="stToolbar"],
-    #MainMenu {{
+    /* Hide deploy button only (keep menu for sidebar toggle) */
+    .stDeployButton,
+    [data-testid="stToolbar"] button[kind="header"] {{
         display: none !important;
         visibility: hidden !important;
     }}
